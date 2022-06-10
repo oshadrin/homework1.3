@@ -42,17 +42,16 @@ public class Homework {
         //exercise 4
 
         int deliveryDistance = 95;
-        int timeOfDelivery20 = 1;
-        int timeOfDelivery60 = 2;
-        int timeOfDelivery100 = 3;
-            if (deliveryDistance <= 20) {
-                System.out.println("Потребуется дней: " + timeOfDelivery20);
-            } else if (deliveryDistance <= 60) {
-                System.out.println("Потребуется дней: " + timeOfDelivery60);
-            } else if (deliveryDistance <= 100) {
-                System.out.println("Потребуется дней: " + timeOfDelivery100);
+        int days = 1;
+
+            if (deliveryDistance > 20) {
+                days++;
+                System.out.println("срок доставки дней: " + days);
+            }else if (deliveryDistance > 60 && deliveryDistance < 100) {
+                days++;
+                System.out.println("срок доставки дней: " + days);
             } else {
-                System.out.println("Доставка не осуществляется");
+                System.out.println(" не доставляется");
             }
 
         //exercise 5
